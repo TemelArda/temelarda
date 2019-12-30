@@ -1,0 +1,297 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+  position: relative;
+}
+body, html, header, .view{
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('/Images/pink dust.png');
+}
+
+div{
+  display: block;
+}
+.navbar{
+  background-color: transparent;
+}
+#nav-name{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 500;
+  font-size: 1.0em;
+  margin-left: 5vw;
+}
+
+.top-nav-collapse {
+    background-color: #3354A6;
+}
+
+.navbar-collapse{
+  font-size: 1.0em;
+}
+.nav-item{
+  border-radius: 10px;
+}
+.nav-item:hover{
+  background-color: black;
+  border-radius: 20px;
+}
+#icons:hover{
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+.page-header-image {
+  background-image: url('/Images/bg1.jpg');
+  height: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .content-center{
+  position: relative;
+  top: 25%;
+  height: 75%;
+  text-align: center;
+
+}
+#pp{
+  width: 180px;
+  height: 180px;
+  box-shadow: 5px 5px 5px #000000;
+  -webkit-transition: all 0.6s;
+transition: all 0.6s ;
+}
+#pp:hover{
+  box-shadow: 10px 10px 10px #000000;
+ transform: scale(1.05, 1.05);
+}
+.container h1{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  color: white;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.container p{
+  color: white;
+  width: 65%;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.0em;
+  margin-top: 2vh;
+}
+.btnn{
+  width: 23%;
+  height: 10%;
+  background-color: #D95959;
+  border-style: none;
+  color: white;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font-size: 1.0em;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+
+.btnn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #DFDE72;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+   transform-origin: 0 50%;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.btnn:hover{
+  color: black;
+}
+.btnn:hover::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.btn{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #F2935C;
+  padding: 0px;
+  margin-top: 2%;
+  border-radius: 100%;
+}
+.btn i{
+  color: black;
+  position: absolute;
+  top: 12px;
+}
+
+.card {
+  border-style: solid;
+  border-width: thick;
+  border-color: #DFDE72;
+  border-radius: 20px;
+  padding-top: 15px;
+  background-color: transparent;
+  color: white;
+}
+.card .card-title{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+}
+.card .card-body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+}
+#waves{
+  border-radius: 20px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.view .card{
+  color: black;
+  border-style: none;
+  background-image: url('/Images/workspace.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#cardp {
+  font-weight: bold;
+}
+.education-text{
+  text-align: left;
+}
+#yorku, #uw-stout{
+    width:50%;
+}
+
+hr{
+  border-top: 1px solid #888888;
+}
+.custom-gradient{
+   background-image: linear-gradient(to bottom right, #A32CDF,#335CC5, #106AD2);
+}
+.custom-gradient2{
+   background-image: linear-gradient(to bottom right, #EA5A6F, #DE791E, #FCCF3A);
+}
+.carousel-text{
+  width: 90%;
+  color: white;
+  text-align: left;
+}
+.carousel-text h2{
+
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+}
+#skillCard{
+  border-style: none;
+  background-color: #BBBFFF;
+  color: black;
+}
+.progress-container{
+  text-align: left;
+}
+.background-image{
+  background-image: url('/Images/tsky.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contactCard{
+  border:none;
+  border-radius: 5px;
+  background: white;
+  color: black;
+}
+#contactBody{
+  font-size: 0.80em;
+}
+#submitbtn{
+  width: 125px;
+  height: 50px;
+  text-align: center;
+  margin-top: 0px;
+  border-radius: 0;
+}
+@media only screen and (max-width: 1024px){
+  .btnn{
+    width: 50%;
+  }
+  .container p{
+    width: 75%;
+    font-weight: bold;
+    font-size: 1.0em;
+    margin-top: 2vh;
+  }
+  #yorku, #uw-stout{
+      width:75%;
+  }
+}
+@media only screen and (max-width: 800px){
+  .navbar{
+    height: auto;
+    background-color: #3354A6;
+  }
+  .container p{
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.0em;
+    margin-top: 2vh;
+  }
+  #yorku, #uw-stout{
+      width:75%;
+  }
+  .btnn{
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 500px){
+  #pp{
+    height: 150px;
+    width: 150px;
+  }
+  .container p{
+    font-size: 0.80em;
+  }
+  .btnn{
+    width: 65%;
+    height: 10%;
+    background-color: #D95959;
+    color: white;
+    font-size: 0.80em;
+  }
+  .btn{
+    background-color: transparent;
+  }
+  .btn i{
+    color: white;
+  }
+  #yorku, #uw-stout{
+      width:90%;
+  }
+}
+@media only screen and (max-width: 400px){
+  .container h1{
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .container p{
+    font-size: 12px;
+  }
+}
